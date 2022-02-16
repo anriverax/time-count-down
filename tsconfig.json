@@ -1,0 +1,62 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"compilerOptions": {
+		"rootDir": "src",
+		"baseUrl": "./",
+		"declaration": true,
+		"declarationDir": "build",
+		"jsx": "react",
+		"module": "esnext",
+		"paths": {
+			"@anrivera/react-time-count-down": ["./src/index"]
+		},
+		"skipLibCheck": true, //false
+		"allowJs": true,
+		"allowSyntheticDefaultImports": true,
+		"allowUnreachableCode": false,
+		"allowUnusedLabels": false,
+		"esModuleInterop": true,
+		"experimentalDecorators": true,
+		"forceConsistentCasingInFileNames": true,
+		"importHelpers": true,
+		//	"importsNotUsedAsValues": "error",
+		"isolatedModules": true,
+		"lib": ["ES6", "DOM", "ES2016", "ES2017", "ESNext"],
+		"moduleResolution": "node",
+		"noFallthroughCasesInSwitch": true,
+		"noEmit": true,
+		//"noImplicitAny": true,
+		"noImplicitReturns": false,
+		"noImplicitUseStrict": false,
+		"noStrictGenericChecks": false,
+		"noUnusedLocals": true,
+		//"noUnusedParameters": true,
+		"resolveJsonModule": true,
+		"sourceMap": true,
+		"strict": false, // false
+		"target": "ESNext"
+		/*
+
+		"incremental": true
+    */
+	},
+	"exclude": [
+		"node_modules",
+		"build",
+		"dist",
+		"src/**/*.stories.tsx",
+		"__test__/**/*-test.ts",
+		"test",
+		"lib",
+		"jest.config.js",
+		"src/**/*.test.tsx"
+	],
+	"include": ["src/**/*"],
+	"types": ["react", "react-dom", "react-test-renderer", "jest"],
+	"filesGlob": [
+		"typings/index.d.ts",
+		"src/**/*.ts",
+		"src/**/*.tsx",
+		"node_modules/typescript/lib/lib.es6.d.ts"
+	]
+}

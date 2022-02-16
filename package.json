@@ -1,0 +1,39 @@
+{
+	"name": "@anrivera/react-time-count-down",
+	"version": "1.0.3",
+	"author": "Anibal Rivera",
+	"main": "build/index.js",
+	"module": "build/index.es.js",
+	"devDependencies": {
+		"@rollup/plugin-commonjs": "^21.0.1",
+		"@rollup/plugin-node-resolve": "^13.1.1",
+		"@types/react": "^17.0.37",
+		"node-sass": "^7.0.0",
+		"rollup": "^2.61.1",
+		"rollup-plugin-peer-deps-external": "^2.2.4",
+		"rollup-plugin-postcss": "^4.0.2",
+		"rollup-plugin-typescript2": "^0.31.1"
+	},
+	"peerDependencies": {
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2"
+	},
+	"scripts": {
+		"build": "rollup -c",
+		"prepublishOnly": "npm run build"
+	},
+	"keywords": [
+		"component",
+		"design",
+		"timer",
+		"counter",
+		"react"
+	],
+	"engines": {
+		"node": ">=14"
+	},
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org/"
+	}
+}
